@@ -44,6 +44,7 @@
                 </div>
             </div>
         </header>
+        
         <!-- Features section-->
         <section class="py-5 border-bottom" id="features">
             <div class="container px-5 my-5">
@@ -74,6 +75,38 @@
                 </div>
             </div>
         </section>
+        <style>
+    
+            button#openButton {
+                background-color: #3498db;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+    
+            button#openButton:hover {
+                background-color: #2980b9;
+            }
+        </style>
+            <body>
+                <button class="text-center" id="openButton" onclick="openLandingPage()">Open Landing Page</button>
+            
+                <script>
+                    function openLandingPage() {
+                        // Add code here to open Landing_Page.html
+                        window.location.href = 'Landing_Page.html';
+                    }
+                </script>
+            </body>
         <section class="bg-light py-5 border-bottom">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
@@ -232,6 +265,8 @@
                 </div>
             </div>
         </section>
+        <h1>Wireframe</h1>
+        <img src="Wireframe.png" alt="Description of the image">
         <!-- Testimonials section-->
         <section class="py-5 border-bottom">
             <div class="container px-5 my-5 px-5">
