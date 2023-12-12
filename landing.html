@@ -146,13 +146,26 @@
 
     
                     <!-- Try for Free Input Field and Button -->
-                    <div class="mb-3">
+                    <!-- <div class="mb-3">
                         <div class="input-group">
                             <input type="email" class="form-control" id="tryForFreeInput" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                             <button class="btn btn-primary" type="button" onclick="tryForFree()">Try for Free</button>
                         </div>
-                    </div>
+                    </div> -->
                     
+                    <div class="mb-3">
+                        <form
+                        action="https://formspree.io/f/xeqbywee"
+                        method="POST"
+                        >
+                            <div class="input-group">
+                                <label>
+                                    <input type="email" class="form-control" id="tryForFreeInput" name="email" required placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                </label>
+                                <button class="btn btn-primary" type="submit" onclick="tryForFree()">Try for Free</button>
+                            </div>
+                        </form>
+                    </div>
     
                     <!-- Analytics Image -->
                     <div>
