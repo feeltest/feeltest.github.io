@@ -59,6 +59,25 @@
         gtag('js', new Date());
 
         gtag('config', 'G-9MF1ZE563T');
+
+
+        function tryForFree() {
+            // Get the input value
+            var emailInput = document.getElementById('tryForFreeInput').value;
+    
+            // Your logic to save or process the input value goes here
+            // For example, you might want to send it to a server using AJAX
+    
+            // Add Google Analytics event tracking
+            gtag('event', 'form_submission', {
+                'event_category': 'Form',
+                'event_label': 'Try For Free Form',
+                'value': emailInput // Optional: Include additional data in the 'value' parameter
+            });
+    
+            // Reload the page after form submission
+            location.reload();
+        }
     </script>
 </head>
 
