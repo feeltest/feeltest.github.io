@@ -10832,3 +10832,9 @@ textarea.form-control-lg {
   width: 4rem;
   font-size: 2rem;
 }
+
+.images {
+  max-width: 100%; /* Ensure images don't exceed the width of their container */
+  height: auto;    /* Maintain the aspect ratio of the images */
+  margin-bottom: 20px; /* Add some margin for better spacing */
+}

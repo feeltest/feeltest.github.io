@@ -12,7 +12,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        .team-images {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,7 +42,7 @@
     </nav>
 
     <!-- Header-->
-    <header class="bg-dark py-5">
+    <!-- <header class="bg-dark py-5">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-6">
@@ -46,7 +55,41 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+
+<section class="py-5 border-bottom h-80" id="team">
+    <div class="container text-center">
+        <h3>Elevate focus group testing with our wearable devic </h3>
+        <h4>Capture reactions, transmit real-time data, and unlock analyzed insights for informed decision-making</h4>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <!-- Left Side (Device Image) -->
+            <div class="col-lg-8">
+                <img src="assets/Device.jpg" alt="Description of the image" class="team-images img-fluid">
+            </div>
+
+            <!-- Right Side (Analytics Image at the bottom) -->
+            <div class="col-lg-4 d-flex flex-column justify-content-end">
+                <!-- Try for Free Input Field and Button -->
+                <div class="mb-3 mb-lg-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="tryForFreeInput" placeholder="Enter your email">
+                        <button class="btn btn-primary" type="button">Try for Free</button>
+                    </div>
+                </div>
+
+                <!-- Analytics Image -->
+                <div>
+                    <img src="assets/Analytics.jpg" alt="Description of the image" class="team-images img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
 
 <!-- Team and Project Roles Section-->
 <section class="py-5 border-bottom" id="team">
