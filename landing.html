@@ -20,11 +20,22 @@
             margin-bottom: 20px;
         }
     </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tryForFreeButton = document.getElementById("tryForFreeButton");
+
+            tryForFreeButton.addEventListener("click", function () {
+                // Scroll to the top of the page
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
 </head>
 
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container px-5">
             <a class="navbar-brand" href="#!">Feel Test</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,9 +48,14 @@
                     <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
                 </ul>
+                <!-- Try for Free Button -->
+                <div class="d-flex">
+                    <button id="tryForFreeButton" class="btn btn-primary ms-2" type="button">Try for Free</button>
+                </div>
             </div>
         </div>
     </nav>
+    
 
     <!-- Header-->
     <!-- <header class="bg-dark py-5">
@@ -57,37 +73,47 @@
         </div>
     </header> -->
 
-<section class="py-5 border-bottom h-80" id="team">
-    <div class="container text-center">
-        <h3>Elevate focus group testing with our wearable devic </h3>
-        <h4>Capture reactions, transmit real-time data, and unlock analyzed insights for informed decision-making</h4>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <!-- Left Side (Device Image) -->
-            <div class="col-lg-8">
-                <img src="assets/Device.jpg" alt="Description of the image" class="team-images img-fluid">
-            </div>
-
-            <!-- Right Side (Analytics Image at the bottom) -->
-            <div class="col-lg-4 d-flex flex-column justify-content-end">
-                <!-- Try for Free Input Field and Button -->
-                <div class="mb-3 mb-lg-5">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="tryForFreeInput" placeholder="Enter your email">
-                        <button class="btn btn-primary" type="button">Try for Free</button>
-                    </div>
+    <section class="py-5 border-bottom h-80" id="team">
+        <br>
+        <div class="container text-center">
+            <h3>Elevate focus group testing with our wearable device </h3>
+            <h4>Capture reactions, transmit real-time data, and unlock analyzed insights for informed decision-making</h4>
+        </div>
+        <br>
+        <div class="container mb-4">
+            <div class="row">
+                <!-- Left Side (Device Image) -->
+                <div class="col-lg-8">
+                    <img src="assets/Device.jpg" alt="Description of the image" class="team-images img-fluid">
                 </div>
+    
+                <!-- Right Side (Analytics Image at the bottom) -->
+                <div class="col-lg-4 d-flex flex-column justify-content-end">
+                    <!-- FeelTest Text -->
+                    <div class="mb-3 mb-lg-5 text-center" style="margin-top: -20px;">
+                        <h5 class="text-primary display-4">FeelTest</h5>
+                    </div>
 
-                <!-- Analytics Image -->
-                <div>
-                    <img src="assets/Analytics.jpg" alt="Description of the image" class="team-images img-fluid">
+    
+                    <!-- Try for Free Input Field and Button -->
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="tryForFreeInput" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="button">Try for Free</button>
+                        </div>
+                    </div>
+    
+                    <!-- Analytics Image -->
+                    <div>
+                        <img src="assets/Analytics.jpg" alt="Description of the image" class="team-images img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    
+    
+    
 
     
 
